@@ -115,6 +115,7 @@ p {
   }
 
   .main-header {
+    width: 80%;
     margin: 0;
     padding: 1rem;
   }
