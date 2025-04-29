@@ -3,15 +3,14 @@ html {
 }
 body {
   font-family: Poppins;
-  margin: 1rem 2rem;
+  margin: 1rem 5rem;
 }
 main {
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 2rem;
+  margin: 4rem 0;
 }
 .container {
   display: grid;
@@ -19,12 +18,49 @@ main {
   grid-template-rows: auto auto;
   gap: 2rem;
 }
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  padding: 3rem;
+}
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
 .card {
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 2rem;
   border-top: 4px solid;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+.card h3 {
+  text-align: justify;
+  margin-bottom: 0;
+}
+.card p {
+  text-align: justify;
+  margin-bottom: 0.5em;
+  padding-right: 20px;
+  padding-bottom: 1.5rem;
+  color: hsl(234, 12%, 34%);
 }
 .supervisor {
   grid-column: 1;
@@ -48,9 +84,74 @@ main {
   align-self: center;
   border-color: hsl(212, 86%, 64%);
 }
+.icon-container {
+  display: flex;
+  justify-content: right;
+}
+
 .icon {
-  display: inline-flex;
   width: 50px;
   height: 50px;
-  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 625px) {
+  body {
+    margin: 1rem;
+    padding: 0;
+  }
+
+  main {
+    margin: 1rem 0;
+  }
+
+  .main-header {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .main-header p {
+    color: hsl(234, 12%, 34%);
+    max-width: 500px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: auto;
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    color: hsl(229, 6%, 66%);
+    padding-right: 0;
+  }
+
+  .supervisor,
+  .team-builder,
+  .karma,
+  .calculator {
+    grid-column: auto;
+    grid-row: auto;
+  }
 }
