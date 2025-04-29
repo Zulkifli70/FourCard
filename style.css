@@ -134,7 +134,8 @@ p {
   }
 
   .card {
-    width: auto;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0;
     padding: 1.5rem;
   }
@@ -148,6 +149,11 @@ p {
     font-size: 0.9rem;
     color: hsl(229, 6%, 66%);
     padding-right: 0;
+    padding-bottom: 1rem;
+  }
+
+  .icon-container {
+    justify-content: flex-end;
   }
 
   .supervisor,
@@ -156,5 +162,6 @@ p {
   .calculator {
     grid-column: auto;
     grid-row: auto;
+    align-self: stretch;
   }
 }
