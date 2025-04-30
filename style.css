@@ -118,6 +118,7 @@ p {
 
   main {
     margin: 1rem 0;
+    padding: 3rem 0;
   }
 
   .main-header {
@@ -132,7 +133,6 @@ p {
   }
 
   .container {
-    background-color: azure;
     display: flex;
     flex-direction: column;
     width: 100%;
