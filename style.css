@@ -50,7 +50,7 @@ p {
   font-weight: 400;
 }
 .card {
-  max-width: 350px;
+  max-width: 325px;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -132,15 +132,17 @@ p {
   }
 
   .container {
+    background-color: azure;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     max-width: 350px;
     gap: 1.5rem;
   }
 
   .card {
-    width: 100%;
+    max-width: none;
+    width: 90%;
     box-sizing: border-box;
     margin: 0;
     padding: 1.5rem;
@@ -168,6 +170,6 @@ p {
   .calculator {
     grid-column: auto;
     grid-row: auto;
-    align-self: stretch;
+    align-self: center;
   }
 }
